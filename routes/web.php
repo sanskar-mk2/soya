@@ -15,7 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/onboarding', function () {
+    return view('register');
+});
+
+Route::get('getin', function () {
+    return view('getin');
 });
 
 Route::get('/dashboard', function () {
