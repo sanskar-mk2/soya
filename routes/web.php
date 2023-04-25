@@ -22,8 +22,12 @@ Route::get('/onboarding', function () {
     return view('register');
 });
 
-Route::get('getin', function () {
+Route::get('/getin', function () {
     return view('getin');
+});
+
+Route::get('/premium', function () {
+    return view('premium');
 });
 
 Route::get('/dashboard', function () {

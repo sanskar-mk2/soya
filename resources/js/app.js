@@ -7,6 +7,10 @@ window.Alpine = Alpine;
 
 document.addEventListener("alpine:init", () => {
     let countdownInterval = null;
+    Alpine.data("premium", () => ({
+        open: false,
+        package_selected: 1,
+    }));
     Alpine.data("onboarding", () => ({
         page: 8,
         next() {
